@@ -1,0 +1,59 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: var(--white);
+    margin: auto;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 650px;
+    border: 1px solid var(--black2);
+  }
+  
+  /* The Close Button */
+  .closeContainer{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+
+  }
+  .close {
+    color: var(--black);
+  }
+  
+  .close:hover,
+  .close:focus {
+    filter: invert(1);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #previmg{
+    max-height: 300px;
+    display: none;
+  }
+  #previmgInp{
+    display: none;
+  }
+  .UploadCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    cursor: pointer;
+  }
+  .UploadCont i{
+    color: var(--black);
+  }
