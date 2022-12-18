@@ -22,6 +22,15 @@ let showDrop=(this0,event)=>{
   }
 }
 
+let DelModal=(event)=>{
+  let temp=document.getElementById(event);
+  let temp3=temp.getElementsByClassName("textBx");
+  let temp4=temp3[0].querySelector("h3");
+  let Title=temp4.innerHTML;
+  let x=confirm("Are you sure you want to delete "+Title+" ?")
+  console.log(x);
+}
+
 let ShowModalEdit=(event)=>{
   let temp=document.getElementById(event);
   // Img Url Variables
